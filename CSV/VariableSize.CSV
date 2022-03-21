@@ -1,0 +1,171 @@
+﻿
+;これはEmueraの変数サイズ指定用ファイルです。
+;このファイルをcsvフォルダ内に置くことで配列変数の要素の数を変えることが出来ます。
+;VariableSize.CSV中でサイズを指定していない変数については標準の値が使われます。
+
+;ABLNAMEなどのcsvから読む変数のサイズも変更できるようになりました。
+;ABLとABLNAMEなど対応関係にある変数は片方を変更すると他方も変更されます。
+;1.753における対応関係は以下のとおりです
+;ITEMNAME, ITEMPRICE
+;ABLNAME, ABL
+;TALENTNAME, TALENT
+;EXPNAME, EXP
+;MARKNAME, MARK
+;BASENAME, BASE
+;SOURCENAME, SOURCE
+;EXNAME, EX
+;EQUIPNAME, EQUIP
+;TEQUIPNAME, TEQUIP
+;FLAGNAME, FLAG
+;TFLAGNAME, TFLAG
+;CFLAGNAME, CFLAG
+;TCVARNAME, TCVAR
+;CSTRNAME, CSTR
+;
+;PALAMNAMEとPALAMが対応しないことに注意してください。PALAMNAMEはJUELNAMEを兼ねているからです。
+;また、例えばBASENAMEはBASEに連動しますが、MAXBASEやLOSEBASEなどのサイズとは独立しています。適宜修正してください。
+;STR及びTRAINNAMEには対応する変数がありません。
+
+;RAND、CHARANUMなどのその都度計算される値については要素数を変更できません。
+;NO、NAMEのような配列でない変数もサイズを指定することはできません。
+
+;変数のサイズを変更してもセーブデータはそのまま使えます。
+;ただし、セーブされているサイズより変更後のサイズの方が小さい場合、はみ出たデータは失われます。
+;また、セーブされているサイズがeramakerの標準の配列サイズより大きい場合、eramakerでデータをロードすると正常に動作しません。
+
+;PALAMNAME, TRAINNAME, STR以外は対応する変数のサイズに連動して変更されます。
+;ITEMNAME,1000
+;ABLNAME,100
+;TALENTNAME,1000
+;EXPNAME,100
+;MARKNAME,100
+PALAMNAME,100
+TRAINNAME,100
+;BASENAME,100
+;SOURCENAME,1000
+;EXNAME,100
+;EQUIPNAME,100
+;TEQUIPNAME,100
+;FLAGNAME,10000
+;CFLAGNAME,1000
+;TFLAGNAME,1000
+;TCVARNAME,100
+;CSTRNAME,100
+STR,3000
+
+;整数型１次元配列変数-eramakerより
+DAY,100
+MONEY,100
+ITEM,100
+FLAG,100
+TFLAG,100
+UP,100
+PALAMLV,100
+EXPLV,100
+EJAC,100
+DOWN,100
+RESULT,100
+COUNT,100
+TARGET,100
+ASSI,100
+MASTER,100
+NOITEM,100
+LOSEBASE,100
+SELECTCOM,100
+ASSIPLAY,100
+PREVCOM,100
+
+TIME,100
+ITEMSALES,100
+PLAYER,100
+NEXTCOM,100
+PBAND,100
+BOUGHT,100
+
+A,100
+B,100
+C,100
+D,100
+E,100
+F,100
+G,100
+H,100
+I,100
+J,100
+K,100
+L,100
+M,100
+N,100
+O,100
+P,100
+Q,100
+R,100
+S,100
+T,100
+U,100
+V,100
+W,100
+X,100
+Y,100
+Z,100
+
+;整数型１次元配列変数-Emuera追加分
+ITEMPRICE,100
+
+;文字列型１次元配列変数
+SAVESTR,100
+TSTR,100
+RESULTS,100
+
+;キャラ変数-整数型１次元配列変数-eramakerより
+BASE,100
+MAXBASE,100
+ABL,100
+TALENT,100
+EXP,100
+MARK,100
+PALAM,100
+SOURCE,100
+EX,100
+CFLAG,100
+JUEL,100
+RELATION,100
+EQUIP,100
+TEQUIP,100
+STAIN,100
+GOTJUEL,100
+NOWEX,100
+
+;キャラ変数-整数型１次元配列変数-Emuera追加分
+DOWNBASE,100
+CUP,100
+CDOWN,100
+TCVAR,100
+
+;キャラ変数-文字列型１次元配列変数-Emuera追加分
+CSTR,100
+
+
+;整数型１次元配列変数-特殊
+LOCAL,100
+LOCALS,100
+ARG,10
+ARGS,10
+GLOBAL,100
+GLOBALS,100
+
+;変更不可。乱数システムが使用するため。
+;RANDDATA,625
+
+;整数型2次元配列
+DITEMTYPE,10,10
+DA,10,10
+DB,10,10
+DC,10,10
+DD,10,10
+DE,10,10
+
+;整数型3次元配列
+;全要素数（3つの数を乗算した数）が100万を超えてはならない
+TA,10,10,10
+TB,10,10,10

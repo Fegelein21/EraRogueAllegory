@@ -1,0 +1,41 @@
+﻿
+@EVENTFIRST
+
+ARRAYSHIFT ALL_LIST, 1, "KMHBRYRUTKS", 0
+ARRAYSHIFT ALL_LIST_NAME, 1, "布施明 - 君は薔薇より美しい", 0
+
+;===========================================
+
+@KMHBRYRUTKS
+
+PIC_TICK = 100
+PIC_LENS = 115
+BGM_VOLUME = 75
+START_DELAY_TICK = 600
+END_DELAY_TICK = 200
+
+CALL TEXT_KMHBRYRUTKS
+CALL DATA_KMHBRYRUTKS
+
+LOCALS =
+LOCALS += "    ______                    ______                      " + "\n"
+LOCALS += "   / ____/   _____  ____ _   / ____/  __  __   _____  ___ " + "\n"
+LOCALS += "  / __/     / ___/ / __ `/  / /_     / / / /  / ___/ / _ ╰" + "\n"
+LOCALS += " / /___    / /    / /_/ /  / __/    / /_/ /  (__  ) /  __/" + "\n"
+LOCALS += "/_____/   /_/     ╰__,_/  /_/       ╰__,_/  /____/  ╰___/ " + "\n"
+LOCALS += "                  ___     __      _                       " + "\n"
+LOCALS += "                 /   |   / /__   (_)   _____  ____ _      " + "\n"
+LOCALS += "                / /| |  / //_/  / /   / ___/ / __ `/      " + "\n"
+LOCALS += "               / ___ | / ,<    / /   / /    / /_/ /       " + "\n"
+LOCALS += "              /_/  |_|/_/|_|  /_/   /_/     ╰__,_/        " + "\n"
+LOCALS += "                                                          " + "\n"
+LOCALS:1 = ～君は薔薇より美しい～
+
+GAME_TITLE '= LOCALS
+GAME_TITLE:1 '= LOCALS:1
+
+;===========================================
+
+@PLAY_KMHBRYRUTKS
+
+PLAYBGM "KMHBRYRUTKS.aac"

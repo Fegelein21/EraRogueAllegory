@@ -1,0 +1,41 @@
+﻿
+@EVENTFIRST
+
+ARRAYSHIFT ALL_LIST, 1, "NGGYU", 0
+ARRAYSHIFT ALL_LIST_NAME, 1, "Rick Astley - Never Gonna Give You Up", 0
+
+;===========================================
+
+@NGGYU
+
+PIC_TICK = 100
+PIC_LENS = 113
+BGM_VOLUME = 50
+START_DELAY_TICK = 250
+END_DELAY_TICK = 200
+
+CALL TEXT_NGGYU
+CALL DATA_NGGYU
+
+LOCALS =
+LOCALS += "    ______                    ____     _            __  " + "\n"
+LOCALS += "   / ____/   _____  ____ _   / __ ╰   (_)  _____   / /__" + "\n"
+LOCALS += "  / __/     / ___/ / __ `/  / /_/ /  / /  / ___/  / //_/" + "\n"
+LOCALS += " / /___    / /    / /_/ /  / _, _/  / /  / /__   / ,<   " + "\n"
+LOCALS += "/_____/   /_/     ╰__,_/  /_/ |_|  /_/   ╰___/  /_/|_|  " + "\n"
+LOCALS += "           ___            __     __                     " + "\n"
+LOCALS += "          /   |   _____  / /_   / /  ___    __  __      " + "\n"
+LOCALS += "         / /| |  / ___/ / __/  / /  / _ ╰  / / / /      " + "\n"
+LOCALS += "        / ___ | (__  ) / /_   / /  /  __/ / /_/ /       " + "\n"
+LOCALS += "       /_/  |_|/____/  ╰__/  /_/   ╰___/  ╰__, /        " + "\n"
+LOCALS += "                                         /____/         " + "\n"
+LOCALS:1 = ～Never Gonna Give You Up～
+
+GAME_TITLE '= LOCALS
+GAME_TITLE:1 '= LOCALS:1
+
+;===========================================
+
+@PLAY_NGGYU
+
+PLAYBGM "NGGYU.aac"
