@@ -1,7 +1,6 @@
 ## Era侠盗寓言 ～北部银河的荣耀约克尔联邦～
 **EraRogueAllegory ～Northern Galaxy's Glorious Yolkel Union～**
 
-
 ![](https://img1.imgtp.com/2022/03/19/Uq17XOGu.png)
 
 #### 【游戏背景】
@@ -17,7 +16,6 @@
 
 *而这场传奇的太空史诗仍在继续，并由你来亲眼见证。。。*
 
-
 #### 【游戏内容】
 - 这是一款使用ASCII字符来绘制画面的文字科幻冒险游戏。
 - 本游戏拥有114名含独立剧情和全语音的可互动角色。
@@ -25,12 +23,16 @@
 - 用途各异的武器、服饰、道具等共计1919种物品。
 - 多达810个章节的史诗级剧情流程等你体验。
 
-
 #### 【注意事项】
 本游戏支持播放音频，游玩前请注意音量。
 
 本游戏依赖Windows系统的Windows Media Player的功能组件。
 
 请确保上述软件未被禁用或删除，否则无法运行游戏。
+
+#### 【项目地址】
+https://github.com/Fegelein21/EraRogueAllegory
+
+https://gitee.com/fegelein21/EraRogueAllegory
 
 #### 作者：Fegelein21
